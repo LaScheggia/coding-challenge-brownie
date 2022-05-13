@@ -1,10 +1,10 @@
 <template>
   <div class="dc-wrapper">
     <div class="dc-title bg-red-400">TITLE</div>
-    <div class="dc-column-container bg-lime-300">
-      <div class="column left bg-teal-400 hidden lg:block">text text text</div>
-      <div class="column middle bg-yellow-400 sm:w-96">IMG</div>
-      <div class="column right bg-blue-400 hidden lg:block">SLIDER</div>
+    <div class="row">
+      <div class="bg-danger col-xs-12 col-sm-5">text text text</div>
+      <div class="bg-primary d-none d-sm-block col-sm-4">IMG</div>
+      <div class="bg-secondary d-none d-sm-block col-sm-3">SLIDER</div>
     </div>
   </div>
 </template>
