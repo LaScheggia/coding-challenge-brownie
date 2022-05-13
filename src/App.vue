@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NavbarComp/>
+    <HeroComp/>
+    <EventsComp/>
+    <CalendarComp/>
+    <GalleryComp/>
+    <ContactsComp/>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavbarComp from './components/NavbarComp.vue'
+import HeroComp from './components/HeroComp.vue'
+import ContactsComp from './components/ContactsComp.vue'
+import GalleryComp from './components/GalleryComp.vue'
+import EventsComp from './components/EventsComp.vue'
+import CalendarComp from './components/CalendarComp.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    NavbarComp,
+    HeroComp,
+    ContactsComp,
+    GalleryComp,
+    EventsComp,
+    CalendarComp
+}
 }
 </script>
 
 <style lang="scss">
+@import './assets/style/global.scss';
+
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>
