@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="jdmsgallery">
     <div class="gallery">
       <div class="gallery__column">
         <figure class="gallery__thumb">
@@ -110,9 +110,10 @@ export default {
 
 <style lang="scss" scoped>
 .gallery {
+  overflow: hidden;
   display: flex;
   transition: 0.3s;
-  background-color: black;
+  background-color: transparent;
 
   &:hover &__image {
     filter: grayscale(1);

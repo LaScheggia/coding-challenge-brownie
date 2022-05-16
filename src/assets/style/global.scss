@@ -1,8 +1,15 @@
-*{
+@import "./vars.scss";
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Montserrat-regular";
+
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .dc-wrapper {
@@ -10,11 +17,79 @@
   margin: 0 auto;
 }
 
-// le liste in general xkè vale su tutte
-ul{
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.dc-line-height {
+  line-height: 1.8;
+}
+
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
+
+.button {
+  border: 1px solid $dc-accent;
+  padding: 10px;
+  color: $dc-light;
+
+  background-color: transparent;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out smooth;
+    border: 2px solid $dc-accent;
+    -webkit-transition: all 0.2s ease-in-out smooth;
+    -moz-transition: all 0.2s ease-in-out smooth;
+    -ms-transition: all 0.2s ease-in-out smooth;
+    -o-transition: all 0.2s ease-in-out smooth;
+  }
+}
+
+.button-2 {
+  border: 1px solid $dc-light-dark;
+  padding: 10px;
+  color: $dc-dark-light;
+
+  background-color: transparent;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out smooth;
+    border: 2px solid $dc-light-dark;
+    -webkit-transition: all 0.2s ease-in-out smooth;
+    -moz-transition: all 0.2s ease-in-out smooth;
+    -ms-transition: all 0.2s ease-in-out smooth;
+    -o-transition: all 0.2s ease-in-out smooth;
+  }
+}
+
+.button-3 {
+  border: 1px solid $dc-dark;
+  padding: 10px;
+  color: $dc-light;
+  background-color: transparent;
+
+  &:hover {
+    color: $dc-dark;
+    background-color: $dc-light;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out smooth;
+    border: 2px solid $dc-light;
+    -webkit-transition: all 0.2s ease-in-out smooth;
+    -moz-transition: all 0.2s ease-in-out smooth;
+    -ms-transition: all 0.2s ease-in-out smooth;
+    -o-transition: all 0.2s ease-in-out smooth;
+  }
+}
+
+
