@@ -116,6 +116,10 @@ i {
   font-size: 20px;
 }
 
+li {
+  cursor: pointer;
+}
+
 h6 {
   color: $dc-dark;
 }

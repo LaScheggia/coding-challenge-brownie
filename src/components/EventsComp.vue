@@ -25,10 +25,10 @@
         jelly-o.
       </p>
     </div>
-    <div class="dc-square-container">
+    <div class="dc-square-container pt-5">
       <div class="row">
         <div class="dc-square text-center col-sm-6 d-none d-sm-block">
-          <h6 class="uppercase pb-5">Explore Tokio streets</h6>
+          <h6 class="uppercase pb-3 pt-5">Explore Tokio streets</h6>
           <h3 >Explore most famous districts where racers meet every night.</h3>
           <p class="dc-line-height">
             Traveling to Tokyo, Japan can be an incredible experience for car
@@ -43,7 +43,7 @@
       <div class="row">
         <div class="dc-square dc-bg-2 col-sm-6"></div>
         <div class="dc-square text-center col-sm-6 d-none d-sm-block">
-          <h6 class="uppercase pb-5">Explore Mount Haruna most famous streets</h6>
+          <h6 class="uppercase pb-3 pt-5">Explore Mount Haruna most famous streets</h6>
           <h3>Akina streets</h3>
           <p class="dc-line-height">
             Haruna appears in Initial D under the name Akina (秋名). Akina pass,
@@ -68,6 +68,10 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/vars.scss";
 
+.dc-wrapper {
+  overflow: hidden;
+}
+
 .dc-intro {
   height: 200px;
   column-count: 2;
@@ -78,9 +82,8 @@ p {
 }
 
 .dc-square {
-  height: 500px;
-  padding-top: 150px
-
+  height: 600px;
+  padding: 30px;
 }
 
 .dc-bg-1 {

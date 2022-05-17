@@ -49,6 +49,7 @@ export default {
 <style lang="scss" scoped>
 .dc-wrapper {
   font-family: "Miller-Display_30501";
+  overflow: hidden;
 }
 
 .dc-title {
